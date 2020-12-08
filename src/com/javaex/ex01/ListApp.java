@@ -8,6 +8,7 @@ public class ListApp {
 		//사각형은 사각형대로 -- 기존
 		//원은 원대로 -- 추가
 		//삼각형은 삼각형대로 -- 추가
+		// 각각의 List를 만들어서 관리 --> 양이 너무 많아짐 (비효율)
 		
 		
 		//사각형 관리
@@ -23,7 +24,17 @@ public class ListApp {
 		Rectangle r100 = rList.get(0);
 		r100.draw();
 		
+		
+		for(int i=0; i<rList.size(); i++) {
+			Rectangle r = rList.get(i);
+			r.draw();
+			//rList.get(i).draw(); -->위와 같은 표현법
+			// 변수를 굳이 만들지 않고rList에서 get(i)번째를 호출 . draw()
+		}
+		
 		System.out.println("사각형"+rList.size() + "개");
+		
+		
 		
 		//원형 관리
 		System.out.println("====원형관리====");
