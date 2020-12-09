@@ -12,16 +12,15 @@ public class MiniLottoApp {
 		
 		Set<Integer> iSet = new HashSet<Integer>();
 		
-		iSet.add((int)(Math.random()*45)+1);
-		iSet.add((int)(Math.random()*45)+1);
-		iSet.add((int)(Math.random()*45)+1);
-		iSet.add((int)(Math.random()*45)+1);
-		iSet.add((int)(Math.random()*45)+1);
-		iSet.add((int)(Math.random()*45)+1);
 		
-			for(Integer j : iSet) {
-				System.out.print(j + " ");	
-			}
+		while(iSet.size()<6) {
+			int num = (int)(Math.random()*45)+1;
+			iSet.add(num);
+		}
+		
+		for(Integer i : iSet) {
+			System.out.print(i + " ");	
+		}
 
 		
 		
