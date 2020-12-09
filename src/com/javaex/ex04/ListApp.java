@@ -16,7 +16,7 @@ public class ListApp {
 		
 		
 		Rectangle r01 = new Rectangle(3,3);
-		Rectangle r02 = new Rectangle(3,3);
+		Rectangle r02 = new Rectangle(4,4);
 		
 		
 		//add()
@@ -39,6 +39,13 @@ public class ListApp {
 		Rectangle r03 = new Rectangle(100,100);
 		//위치지정 추가
 		rList.add(0,r03);
+		System.out.println("====toString===================");
+		
+		System.out.println(rList.toString());
+		
+		
+		
+		
 		
 		System.out.println("=======================");
 		
@@ -75,6 +82,8 @@ public class ListApp {
 		for(int i=0; i<cList.size(); i++) {
 			cList.get(i).draw();
 		}
+		
+		System.out.println(cList.toString());
 		
 		
 		
